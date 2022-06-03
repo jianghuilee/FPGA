@@ -1,0 +1,149 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'sys_clk'
+Slack : -5.939
+TNS   : -270.678
+
+Type  : Slow 1200mV 85C Model Setup 'cnt_1s'
+Slack : -4.608
+TNS   : -462.875
+
+Type  : Slow 1200mV 85C Model Setup 'cminh[0]'
+Slack : -1.964
+TNS   : -12.617
+
+Type  : Slow 1200mV 85C Model Setup 'flag.1111'
+Slack : -1.138
+TNS   : -4.184
+
+Type  : Slow 1200mV 85C Model Hold 'cminh[0]'
+Slack : -3.320
+TNS   : -19.377
+
+Type  : Slow 1200mV 85C Model Hold 'cnt_1s'
+Slack : -0.559
+TNS   : -3.340
+
+Type  : Slow 1200mV 85C Model Hold 'sys_clk'
+Slack : -0.058
+TNS   : -0.058
+
+Type  : Slow 1200mV 85C Model Hold 'flag.1111'
+Slack : 0.743
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'sys_clk'
+Slack : -3.000
+TNS   : -73.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'cnt_1s'
+Slack : -1.000
+TNS   : -128.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'cminh[0]'
+Slack : -0.397
+TNS   : -13.648
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'flag.1111'
+Slack : 0.407
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'sys_clk'
+Slack : -5.247
+TNS   : -233.711
+
+Type  : Slow 1200mV 0C Model Setup 'cnt_1s'
+Slack : -4.007
+TNS   : -405.333
+
+Type  : Slow 1200mV 0C Model Setup 'cminh[0]'
+Slack : -1.804
+TNS   : -11.563
+
+Type  : Slow 1200mV 0C Model Setup 'flag.1111'
+Slack : -1.041
+TNS   : -3.820
+
+Type  : Slow 1200mV 0C Model Hold 'cminh[0]'
+Slack : -2.921
+TNS   : -16.919
+
+Type  : Slow 1200mV 0C Model Hold 'cnt_1s'
+Slack : -0.543
+TNS   : -3.594
+
+Type  : Slow 1200mV 0C Model Hold 'sys_clk'
+Slack : -0.075
+TNS   : -0.075
+
+Type  : Slow 1200mV 0C Model Hold 'flag.1111'
+Slack : 0.786
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'sys_clk'
+Slack : -3.000
+TNS   : -73.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'cnt_1s'
+Slack : -1.000
+TNS   : -128.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'cminh[0]'
+Slack : -0.244
+TNS   : -9.469
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'flag.1111'
+Slack : 0.459
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'sys_clk'
+Slack : -2.898
+TNS   : -124.035
+
+Type  : Fast 1200mV 0C Model Setup 'cnt_1s'
+Slack : -2.209
+TNS   : -208.855
+
+Type  : Fast 1200mV 0C Model Setup 'cminh[0]'
+Slack : -0.752
+TNS   : -4.960
+
+Type  : Fast 1200mV 0C Model Setup 'flag.1111'
+Slack : -0.397
+TNS   : -1.369
+
+Type  : Fast 1200mV 0C Model Hold 'cminh[0]'
+Slack : -1.978
+TNS   : -10.967
+
+Type  : Fast 1200mV 0C Model Hold 'cnt_1s'
+Slack : -0.336
+TNS   : -2.034
+
+Type  : Fast 1200mV 0C Model Hold 'sys_clk'
+Slack : -0.135
+TNS   : -0.135
+
+Type  : Fast 1200mV 0C Model Hold 'flag.1111'
+Slack : 0.573
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'sys_clk'
+Slack : -3.000
+TNS   : -77.479
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'cnt_1s'
+Slack : -1.000
+TNS   : -128.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'cminh[0]'
+Slack : -0.136
+TNS   : -2.321
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'flag.1111'
+Slack : 0.364
+TNS   : 0.000
+
+------------------------------------------------------------

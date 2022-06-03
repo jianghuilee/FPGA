@@ -1,0 +1,8 @@
+
+State Machine - |watch|flag
+Name flag.1111 flag.0111 flag.1011 flag.1101 flag.1110 
+flag.1111 0 0 0 0 0 
+flag.1011 1 0 1 0 0 
+flag.1101 1 0 0 1 0 
+flag.1110 1 0 0 0 1 
+flag.0111 1 1 0 0 0 
