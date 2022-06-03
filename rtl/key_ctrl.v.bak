@@ -1,0 +1,22 @@
+module key_ctrl
+(
+	input wire			sys_clk		,
+	input wire			sys_rst_n	,	
+	input wire [3:0]	key 		,
+	
+	output wire [3:0]	wave_sel 	
+);
+
+always@(posedge sys_clk or negedge sys_rst_n)
+	if(!sys_rst_n)
+		wave_sel<=4'b0001;
+	else if(key[3]==1'b1)
+		wave_sel<=4'b1000;
+	else if(key[2]==1'b1)
+		wave_sel<=4'b0100;
+	else if(key[1]==1'b1)
+		wave_sel<=4'b0010;
+	else if(key[0]==1'b1)
+		wave_sel<=4'b0001;
+	else 		
+endmodule 

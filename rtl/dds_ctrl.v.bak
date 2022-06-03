@@ -1,0 +1,48 @@
+module dds_ctrl
+(
+	input wire 			sys_clk,
+	input wire 			sys_rst_n,
+	input wire [3:0]	wave_sel,
+
+	output wire [9:0]	dac_data	
+	
+
+);
+reg 	[31:0]	fre_add;
+reg 	[11:0]	rom_addr_reg;
+reg 	[13:0]	rom_addr;
+parameter F_WORD=32'd42949; //2^32*（需要频率）/50mhz
+parameter P_WORD=32'd1024;//（需要相位）*2^12/(2*pi)
+
+always@(posedge sys_clk or negedge sys_rst_n)
+ if(!sys_rst_n)
+	fre_add<=32'd0; 
+ else 
+	fre_add<=fre_add+F_WORD; 
+	 	
+always@(posedge sys_clk or negedge sys_rst_n)
+ if(!sys_rst_n)
+	rom_addr_reg<=12'd0; 
+ else 
+	rom_addr_reg<=fre_add[31:20]//+P_WORD; 
+
+always@(posedge sys_clk or negedge sys_rst_n)
+ if(!sys_rst_n)
+	rom_addr<=14'd0; 
+ else 
+	case(wave_sel) 
+	4'd0001:rom_addr<=rom_addr_reg;
+	4'd0010:rom_addr<=rom_addr_reg+4096;
+	4'd0100:rom_addr<=rom_addr_reg+8192;
+	4'd1000:rom_addr<=rom_addr_reg+12288;
+	default:rom_addr<=rom_addr_reg;
+	endcase
+	
+rom_wave	rom_wave_inst (
+	.address ( rom_addr ),
+	.clock ( sys_clk ),
+	.q ( dac_data )
+	);
+	
+	
+endmodule 
